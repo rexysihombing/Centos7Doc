@@ -1,0 +1,9 @@
+grub2-mkconfig 2>/dev/null
+fdisk -l
+vi /etc/grub.d/40_custom 
+Tambahkan potongan code dibawah ini
+menuentry "Windows 10" {
+  set root=(hd0, 1)
+  chainloader +1
+}
+grub2-mkconfig -o /boot/grub2/grub.cfg
