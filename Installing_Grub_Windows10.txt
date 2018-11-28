@@ -6,4 +6,6 @@ menuentry "Windows 10" {
   set root=(hd0, 1)
   chainloader +1
 }
+kemudian save, lalu keluar
+dan terakhir jalankan perintah dibawah ini
 grub2-mkconfig -o /boot/grub2/grub.cfg
